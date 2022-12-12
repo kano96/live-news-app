@@ -5,7 +5,7 @@ import SearchBox from "./SearchBox";
 
 const Header = () => {
   return (
-    <header>
+    <header className="max-w-6xl mx-auto">
       <div className="grid grid-cols-3 p-10  items-center">
         <Bars3Icon className="h-8 w-8 cursor-pointer" />
         <Link href="/" prefetch={false}>
