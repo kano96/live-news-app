@@ -70,11 +70,8 @@ const fetchNews = async (
     const news = sortNewsByImage(newsResponse.data.myQuery);
     return news;
   } catch (error) {
-    console.log(error);
     return null;
   }
 };
 
 export default fetchNews;
-
-// stepzen import curl http://api.mediastack.com/v1/news?access_key=457138c417f8d19355915e38a35847d8&sources=business,sports
