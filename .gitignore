@@ -37,3 +37,4 @@ next-env.d.ts
 
 # mock data
 response.json
+.vercel

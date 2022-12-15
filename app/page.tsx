@@ -4,9 +4,7 @@ import NewsList from "./NewsList";
 import response from "../response.json";
 
 const HomePage = async () => {
-  // TODO: Remove this operator when deploying
-  const news: NewsResponse | null =
-    response || (await fetchNews(categories.join(",")));
+  const news: NewsResponse | null = await fetchNews(categories.join(","));
 
   if (!news) {
     return <h1>Oops, there was an error. Try again later please!</h1>;
